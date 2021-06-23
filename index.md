@@ -1,5 +1,5 @@
 # Introduction to Bulk RNA-seq data analysis 
-### 21st - 23rd April 2021
+### 30th June - 2nd July 2021
 #### Taught remotely
 #### Bioinformatics Training, Craik-Marshall Building, Downing Site, University of Cambridge
 
@@ -10,11 +10,12 @@
 * Abigail Edwards - Bioinformatics Core, Cancer Research UK Cambridge Institute
 * Ashley D Sawle - Bioinformatics Core, Cancer Research UK Cambridge Institute
 * Chandra Chilamakuri - Bioinformatics Core, Cancer Research UK Cambridge Institute
-* Dominique-Laurent Couturier - Bioinformatics Core, Cancer Research UK Cambridge Institute 
 * Jon Price - Miska Group, Gurdon Institute, Cambridge
 * Stephane Ballereau - Bioinformatics Core, Cancer Research UK Cambridge Institute
 * Zeynep Kalender Atak - Miller Group, Cancer Research UK Cambridge Institute
+* Hugo Tavares - 
 * Alexander Baker - Markowetz Group, Cancer Research UK Cambridge Institute
+
 
 ## Outline
 

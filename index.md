@@ -103,22 +103,22 @@ Methods](Markdowns/01_Introduction_to_RNAseq_Methods.html) - Zeynep Kalender Ata
 10:15 - 11:15 [Raw read file format and 
 QC](Markdowns/02_FastQC_introduction.html)  - Zeynep Kalender Atak  
     - [Practical](Markdowns/02_FastQC_practical.html) ([pdf](Markdowns/02_FastQC_practical.pdf))   
-    - [Practical solutions](Markdowns/02_FastQC_practical.Solutions.html) ([pdf](Markdowns/02_FastQC_practical.Solutions.pdf))
+    <!-- - [Practical solutions](Markdowns/02_FastQC_practical.Solutions.html) ([pdf](Markdowns/02_FastQC_practical.Solutions.pdf)) -->
 
 11:15 - 12:45 [Short read alignment with 
 HISAT2](Markdowns/03_Alignment_with_HISAT2_introduction.html) - Jon Price  
     - [Practical](Markdowns/03_Alignment_with_HISAT2_practical.html)  ([pdf](Markdowns/03_Alignment_with_HISAT2_practical.pdf))    
-    - [Practical solutions](Markdowns/03_Alignment_with_HISAT2_practical.Solutions.html) ([pdf](Markdowns/03_Alignment_with_HISAT2_practical.Solutions.pdf))
+    <!-- - [Practical solutions](Markdowns/03_Alignment_with_HISAT2_practical.Solutions.html) ([pdf](Markdowns/03_Alignment_with_HISAT2_practical.Solutions.pdf)) -->
 
 12:45 - 13:45 Lunch
 
 13:45 - 15:30 [QC of alignment](Markdowns/04_QC_of_aligned_reads_introduction.html) - Jon Price  
     - [Practical](Markdowns/04_QC_of_aligned_reads_practical.html) ([pdf](Markdowns/04_QC_of_aligned_reads_practical.pdf))  
-    - [Practical solutions](Markdowns/04_QC_of_aligned_reads_practical.Solutions.html) ([pdf](Markdowns/04_QC_of_aligned_reads_practical.Solutions.pdf))
+   <!-- - [Practical solutions](Markdowns/04_QC_of_aligned_reads_practical.Solutions.html) ([pdf](Markdowns/04_QC_of_aligned_reads_practical.Solutions.pdf)) -->
 
 15:30 - 17:00 [Quantification of Gene Expression with Salmon](Markdowns/05_Quantification_with_Salmon_introduction.html) - Abbi Edwards  
     - [Practical](Markdowns/05_Quantification_with_Salmon_practical.html)  ([pdf](Markdowns/05_Quantification_with_Salmon_practical.pdf))  
-    - [Practical solutions](Markdowns/05_Quantification_with_Salmon_practical.Solutions.html) ([pdf](Markdowns/05_Quantification_with_Salmon_practical.Solutions.pdf))
+    <!-- - [Practical solutions](Markdowns/05_Quantification_with_Salmon_practical.Solutions.html) ([pdf](Markdowns/05_Quantification_with_Salmon_practical.Solutions.pdf)) -->
 
 ### Day 2
 
@@ -127,8 +127,8 @@ R](Markdowns/06_Introduction_to_RNAseq_Analysis_in_R.html) - Ashley Sawle
 
 10:15 - 12:15 - [RNA-seq 
 Pre-processing](Markdowns/07_Data_Exploration.html) ([pdf](Markdowns/07_Data_Exploration.pdf)) - Ashley Sawle   
-    - [Practical solutions](Markdowns/07_Data_Exploration.Solutions.html) ([pdf](Markdowns/07_Data_Exploration.Solutions.pdf))   
-    - [Ashley's Live Script](live_scripts/Session_1_Data_Exploration.R)
+    <!-- - [Practical solutions](Markdowns/07_Data_Exploration.Solutions.html) ([pdf](Markdowns/07_Data_Exploration.Solutions.pdf))   
+    - [Ashley's Live Script](live_scripts/Session_1_Data_Exploration.R) -->
 
 12:15 - 13:15 Lunch
 
@@ -140,20 +140,20 @@ Pre-processing](Markdowns/07_Data_Exploration.html) ([pdf](Markdowns/07_Data_Exp
     
 15:45 - 17:00 [Experimental Design of Bulk RNAseq studies](additional_scripts_and_materials/ExperimentalDesignCourse_Edwards_23-03-2021.pptx) - Abbi Edwards    
     - [Practical](additional_scripts_and_materials/RNAseq_ExperimentalDesignPractical.pdf)    
-    - [Answers](additional_scripts_and_materials/RNAseq_ExperimentalDesignPractical_Answers.pdf) 
+   <!-- - [Answers](additional_scripts_and_materials/RNAseq_ExperimentalDesignPractical_Answers.pdf) -->
 
 ### Day 3
 
 9:30 - 12:15 - [Differential Expression for RNA-seq](Markdowns/10_DE_analysis_with_DESeq2.html) ([pdf](Markdowns/10_DE_analysis_with_DESeq2.pdf)) - Chandra Chilamakuri   
-    - [practical solutions](Markdowns/10_DE_analysis_with_DESeq2.Solutions.html) ([pdf](Markdowns/10_DE_analysis_with_DESeq2.Solutions.html))  
-    - [Chandra's Live Script](live_scripts/deseq2_session_v1.0.R)
+    <!-- - [practical solutions](Markdowns/10_DE_analysis_with_DESeq2.Solutions.html) ([pdf](Markdowns/10_DE_analysis_with_DESeq2.Solutions.html))  
+    - [Chandra's Live Script](live_scripts/deseq2_session_v1.0.R) -->
  
 12:15 - 13:15 Lunch
 
 13:15 - 15:30 [Annotation and Visualisation of RNA-seq
 results](Markdowns/11_Annotation_and_Visualisation.html) ([pdf](Markdowns/11_Annotation_and_Visualisation.pdf)) - Abbi Edwards    
-    - [practical solutions](Markdowns/11_Annotation_and_Visualisation_Solutions.html)  
-    - [Abbi's Live Script](live_scripts/AandV_liveScript.R)
+    <!-- - [practical solutions](Markdowns/11_Annotation_and_Visualisation_Solutions.html)  
+    - [Abbi's Live Script](live_scripts/AandV_liveScript.R) -->
 
 15:30 - 17:00 [Gene-set testing](Markdowns/12_Gene_set_testing_introduction.html) - Stephane Ballereau    
    - [Practical (html)](Markdowns/12_Gene_set_testing.html) [(rmd)](Markdowns/12_Gene_set_testing.Rmd) [(pdf)](Markdowns/12_Gene_set_testing.pdf)

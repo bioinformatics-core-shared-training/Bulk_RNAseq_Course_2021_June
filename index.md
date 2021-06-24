@@ -14,7 +14,6 @@
 * Stephane Ballereau - Bioinformatics Core, Cancer Research UK Cambridge Institute
 * Zeynep Kalender Atak - Miller Group, Cancer Research UK Cambridge Institute
 * Hugo Tavares - 
-* Alexander Baker - Markowetz Group, Cancer Research UK Cambridge Institute
 
 
 ## Outline

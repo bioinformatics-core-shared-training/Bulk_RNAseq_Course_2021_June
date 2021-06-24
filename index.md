@@ -48,7 +48,7 @@ as we go.
 ## Shared Google Document
 
 This 
-<a href="https://docs.google.com/document/d/1_eZIb4Ey7BWUzqK1s2BSDvM0D2B8AABMSecuZarpozo/edit?usp=sharing" target="_blank">Google Document</a> contains useful information and links.. 
+<a href="" target="_blank">Google Document</a> contains useful information and links.. 
 
 Please use it to post any questions you have during the course.
 
@@ -58,7 +58,7 @@ as they can.
 ## Introduce Yourself
 
 There is another Google Doc 
-<a href="https://docs.google.com/document/d/1-xuAbrPFJFpissXD3z4qhqaXvG5GLq7CfI9fWsDg2mA/edit?usp=sharing" target="_blank">here</a>. 
+<a href="" target="_blank">here</a>. 
 Please write a couple sentences here to introduce yourself to the class, tell
 us a bit about your background and what you hope to get out of this course.  If
 you are a student or staff at the University of Cambridge, tell us which

@@ -13,7 +13,7 @@
 * Jon Price - Miska Group, Gurdon Institute, Cambridge
 * Stephane Ballereau - Bioinformatics Core, Cancer Research UK Cambridge Institute
 * Zeynep Kalender Atak - Miller Group, Cancer Research UK Cambridge Institute
-* Hugo Tavares - 
+* Hugo Tavares - Bioinformatics Training Facility, Dept of Genetics
 
 
 ## Outline
@@ -200,6 +200,7 @@ Ashley D Sawle
 Chandra Chilamakuri
 Dominique-Laurent Couturier
 Guillermo Parada González
+Hugo Tavares
 Jon Price
 Mark Dunning
 Mark Fernandes

@@ -69,7 +69,7 @@ ah
 ah[1]
 
 # Download the database we want to use
-OrgDb <- query(ah, c("OrgDb", "Mus musculus"))[[1]]
+MouseEnsDb <- query(ah, c("EnsDb", "Mus musculus", "102"))[[1]]
 
 ```
 
@@ -85,21 +85,13 @@ results table
 
 
 ```{r queryOrgDb, message=F}
-# what can we search for? 'columns'
-columns(OrgDb)
+annotations <- genes(MouseEnsDb, return.type = "data.frame")
 
-# what can we search with? 'keytypes'
-keytypes(OrgDb)
+colnames(annotations)
 
-# lets set it up
-ourCols <- c("SYMBOL", "ENSEMBL", "ENTREZID")
-ourKeys <- rownames(results.interaction.11)[1:1000]
+annot <- annotations %>%
+  dplyr::select(gene_id, gene_name, entrezid)
 
-# run the query
-annot <- AnnotationDbi::select(OrgDb, 
-                keys=ourKeys, 
-                columns=ourCols, 
-                keytype="ENSEMBL")
 ```
 
 
@@ -109,7 +101,7 @@ Let's inspect the annotation.
 
 ```{r inspectAnnot}
 head(annot)
-length(unique(annot$ENTREZID))
+length(unique(annot$entrezid))
 sum(is.na(annot$ENTREZID)) # Why are there NAs in the ENTREZID column?
 
 dim(annot) # why are there more than 1000 rows?

@@ -116,7 +116,7 @@ HISAT2](Markdowns/03_Alignment_with_HISAT2_introduction.html) - Jon Price
     - [Practical](Markdowns/04_QC_of_aligned_reads_practical.html) ([pdf](Markdowns/04_QC_of_aligned_reads_practical.pdf))  
    <!-- - [Practical solutions](Markdowns/04_QC_of_aligned_reads_practical.Solutions.html) ([pdf](Markdowns/04_QC_of_aligned_reads_practical.Solutions.pdf)) -->
 
-15:30 - 17:00 [Quantification of Gene Expression with Salmon](Markdowns/05_Quantification_with_Salmon_introduction.html) - Abbi Edwards  
+15:30 - 17:00 [Quantification of Gene Expression with Salmon](Markdowns/05_Quantification_with_Salmon_introduction.html) - Ashley Sawle  
     - [Practical](Markdowns/05_Quantification_with_Salmon_practical.html)  ([pdf](Markdowns/05_Quantification_with_Salmon_practical.pdf))  
     <!-- - [Practical solutions](Markdowns/05_Quantification_with_Salmon_practical.Solutions.html) ([pdf](Markdowns/05_Quantification_with_Salmon_practical.Solutions.pdf)) -->
 
@@ -132,12 +132,8 @@ Pre-processing](Markdowns/07_Data_Exploration.html) ([pdf](Markdowns/07_Data_Exp
 
 12:15 - 13:15 Lunch
 
-13:15 - 15:45 [Statistical Analysis of Bulk RNAseq Data](Markdowns/StatsRNAseq_Couturier.pdf) - Dominique-Laurent          
-    - [Practical (html)](Markdowns/StatsRNAseq_Couturier.html)
-    [(pdf)](Markdowns/StatsRNAseqPractical_Couturier.pdf)  
-    [(rmd)](Markdowns/StatsRNAseq_Couturier.Rmd)  
+13:15 - 15:45 [Statistical Analysis of Bulk RNAseq Data]() - Hugo Tavares & Zeynep Kalender Atak  
 
-    
 15:45 - 17:00 [Experimental Design of Bulk RNAseq studies](additional_scripts_and_materials/ExperimentalDesignCourse_Edwards_23-03-2021.pptx) - Abbi Edwards    
     - [Practical](additional_scripts_and_materials/RNAseq_ExperimentalDesignPractical.pdf)    
    <!-- - [Answers](additional_scripts_and_materials/RNAseq_ExperimentalDesignPractical_Answers.pdf) -->

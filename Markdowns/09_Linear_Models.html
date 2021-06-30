@@ -1602,13 +1602,19 @@ theme_set(theme_classic())</code></pre>
 </ul>
 <p>For example, if <span class="math inline">\(y = 0.5 - 4.2 \times x\)</span> we have that <span class="math inline">\(\beta_0 = 0.5\)</span> and <span class="math inline">\(\beta_1 = -4.2\)</span>.</p>
 <div class="note">
-<p>TODO</p>
-<p>Make a note that this is a simplified way to write our model. More correct might be:</p>
+<details>
+<p><summary>Statistical model notation</summary></p>
+<p>Throughout these materials, we are using a simplified way to specify our models. This is fine for our purpose, which is mostly to understand what the model coefficients mean. However, in our notation we are ignoring the fact that models can have different distributional assumptions or other components to the model.</p>
+<p>For example, our linear regression model would more correctly be written as:</p>
 <p><span class="math inline">\(y_i \sim N(\mu_i, \sigma^2)\)</span></p>
 <p><span class="math inline">\(\mu_i = \beta_0 + \beta_1 x_i\)</span></p>
-<p>Or, for gene expression:</p>
+<p>Which we can read as: our variable <span class="math inline">\(y_i\)</span> follows a normal distribution with mean <span class="math inline">\(\mu_i\)</span> and variance <span class="math inline">\(\sigma^2\)</span>; the mean <span class="math inline">\(u_i\)</span> is a linear function of the variable <span class="math inline">\(x_i\)</span>.</p>
+<p>In the case of modeling gene expression, we would instead have:</p>
 <p><span class="math inline">\(y_i \sim NB(\mu_i, \phi)\)</span></p>
 <p><span class="math inline">\(log(\mu_i) = \beta_0 + \beta_1 x_i\)</span></p>
+<p>Which we can read as: the gene expression <span class="math inline">\(y_i\)</span> follows a negative binomial distribution with mean <span class="math inline">\(\mu_i\)</span> and dispersion <span class="math inline">\(\phi\)</span>; the log of the mean is a linear function of the variable <span class="math inline">\(x_i\)</span>.</p>
+<p>The model for gene expression is even more complicated, because the dispersion parameter <span class="math inline">\(\phi\)</span> is itself estimated based on a model, which uses dispersion estimates across all the genes. This is out of the scope of this course, but you can find more information about the full model in the <a href="https://doi.org/10.1186/s13059-014-0550-8">DESeq2 paper</a>.</p>
+</details>
 </div>
 <div id="categorical-variables" class="section level3">
 <h3>Categorical Variables</h3>

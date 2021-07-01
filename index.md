@@ -136,7 +136,7 @@ Pre-processing](Markdowns/07_Data_Exploration.html) ([pdf](Markdowns/07_Data_Exp
 
 - Part I: [Statistics of RNA-seq analysis]() - Zeynep Kalender Atak  
 - Part II: [Linear Models in R and DESeq2](Markdowns/09_Linear_Models.html) ([pdf](Markdowns/09_Linear_Models.pdf)) - Hugo Tavares  
-    - [Slides]()
+    - [Slides](https://docs.google.com/presentation/d/1FTP_gdOQ7sBQWZqTbkB97uUzZ57O9FTyVTgfQrqHPeg/edit?usp=sharing)
     - Find the worksheet in `Course_Materials/stats/models_in_r_worksheet.R`
 
 

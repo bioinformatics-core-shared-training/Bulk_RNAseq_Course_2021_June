@@ -130,7 +130,7 @@ In this case it would perhaps makes most sense to discard the Entrez ID
 
 In this case the problems with the annotation aren't due to the versions as we requested release 102 which is the same as the version 102 of the gtf we used  for counting reads in Day 1. It is good to keep an eye on these things so you don't miss releases and know exactly which one you are using at there are often changes albeit minor ones.
 
-The is another set of databases within `AnnotationHub` which you can call instead called `OrgDb` which give you the 'latest' version and are more similar to the bioconductor packages if you are more familiar with those.
+The is another set of databases within `AnnotationHub` which you can call instead called `OrgDb` which give you the 'latest' version and are more similar to the bioconductor packages if you are more familiar with those. They contain slightly more information than the `EnsDb` records.
 
 ## A curated annotation - one we prepared earlier
 

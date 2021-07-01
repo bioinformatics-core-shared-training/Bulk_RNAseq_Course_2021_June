@@ -15,10 +15,10 @@ example_samples <- tibble(
 example_samples
 
 # define a model formula
-temperature_model <- formula(~ treatment)
+treatment_model <- ~ treatment
 
 # model matrix - creates indicator variables for us
-model.matrix(temperature_model, data = example_samples)
+model.matrix(treatment_model, data = example_samples)
 
 
 
@@ -27,7 +27,7 @@ model.matrix(temperature_model, data = example_samples)
 
 # Use read_tsv() to read table in "data/samplesheet_corrected.tsv"
 # Store it in an object called sample_info
-
+sample_info <- read_tsv("data/samplesheet_corrected.tsv")
 
 # Create a model formula to investigate the effect of “Status” on gene expression.
 
@@ -40,7 +40,8 @@ model.matrix(temperature_model, data = example_samples)
 # Exercise 3 --------------------------------------------------------------
 
 
-# Using sample_info, create a new design formula specifying an additive model between “Status” and “TimePoint”.
+# Using sample_info, create a new design formula specifying an additive model
+# between “Status” and “TimePoint”.
 
 
 # How many coefficients do you have with this model?
@@ -62,7 +63,7 @@ colData(dds) <- DataFrame(treatment = factor(rep(c("A", "B", "C"), each = 3)),
 colData(dds)
 
 # add design to DESeqDataSet object
-design(dds) <- formula(~ treatment)
+design(dds) <- ~ treatment
 
 # check model matrix
 model.matrix(design(dds), data = colData(dds))
@@ -70,12 +71,11 @@ model.matrix(design(dds), data = colData(dds))
 # fit the DESeq statistical model
 dds <- DESeq(dds)
 
-# obtain the results of differential expression
-results(dds)
-
 # check what coefficients are available to us
 resultsNames(dds)
 
+# obtain the results of differential expression
+results(dds, contrast = list("treatment_B_vs_A"))
 
 
 
@@ -92,10 +92,11 @@ colData(dds) <- DataFrame(treatment = factor(rep(c("A", "B"), each = 6)),
 colData(dds)
 
 # fix the code below to model the effects of genotype, treatment and their interaction.
-design(dds) <- formula(~ FIXME)
+design(dds) <- ~ FIXME
 
 # fit the model
 dds <- DESeq(dds)
 
 # use resultsNames() to see the coefficients that DESeq created
 # relate them to the "beta" parameters shown in the exercise page
+

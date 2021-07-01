@@ -1566,7 +1566,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Introduction to Bulk RNAseq data analysis</h1>
 <h3 class="subtitle">Linear Models in R and DESeq2</h3>
-<h4 class="date">Last modified: 30 Jun 2021</h4>
+<h4 class="date">Last modified: 01 Jul 2021</h4>
 
 </div>
 
@@ -2149,26 +2149,10 @@ colData(dds)</code></pre>
 </ul>
 <p>To specify a different comparison from the default, we can use the <code>contrast</code> option when getting our results:</p>
 <pre class="r"><code># compare B vs A
-results(dds, contrast = list(&quot;condition_B_vs_A&quot;))</code></pre>
+results(dds, contrast = list(&quot;treatment_B_vs_A&quot;))</code></pre>
 <p>Comparing “A” vs the others is relatively easy, because “A” is the reference level. But what if we wanted to compare B vs C? As we saw in a previous exercise, this is equivalent to asking whether the two coefficients are different from each other (the null hypothesis is: <span class="math inline">\(\beta_2 - \beta_1 = 0\)</span>). We can get this comparison by passing two values to the list:</p>
 <pre class="r"><code># compare C vs B
 results(dds, contrast = list(&quot;treatment_C_vs_A&quot;, &quot;treatment_B_vs_A&quot;))</code></pre>
-<pre><code>## log2 fold change (MLE): treatment_C_vs_A vs treatment_B_vs_A 
-## Wald test p-value: treatment_C_vs_A vs treatment_B_vs_A 
-## DataFrame with 100 rows and 6 columns
-##          baseMean log2FoldChange     lfcSE      stat    pvalue      padj
-##         &lt;numeric&gt;      &lt;numeric&gt; &lt;numeric&gt; &lt;numeric&gt; &lt;numeric&gt; &lt;numeric&gt;
-## gene1    16.93716      -1.203794  0.648955 -1.854973 0.0636001  0.503459
-## gene2     5.75715       0.531701  1.250190  0.425297 0.6706204  0.893284
-## gene3    13.77509       0.832356  0.847033  0.982672 0.3257689  0.844011
-## gene4    14.59073      -1.918993  0.792785 -2.420571 0.0154961  0.498633
-## gene5     4.22101       1.720095  1.621988  1.060485 0.2889238  0.844011
-## ...           ...            ...       ...       ...       ...       ...
-## gene96    4.69107      -2.353426  1.270122 -1.852914 0.0638947  0.503459
-## gene97    1.84454      -2.880422  2.479146 -1.161861 0.2452921  0.783352
-## gene98  143.01302       0.226056  0.446606  0.506163 0.6127419  0.893284
-## gene99    3.03927      -2.123250  1.597064 -1.329471 0.1836926  0.732852
-## gene100   1.42573      -2.321028  2.337808 -0.992822 0.3207966  0.844011</code></pre>
 <div id="interpreting-the-results" class="section level3">
 <h3>Interpreting the Results</h3>
 <p>When obtaining the <code>results()</code> from our model, we get several columns in the output. Their meaning is:</p>
@@ -2235,9 +2219,9 @@ dds &lt;- DESeq(dds)</code></pre>
 ## [4] &quot;genotypeMUT.treatmentB&quot;</code></pre>
 <p>We have four coefficients, which we can relate to that model notation as meaning:</p>
 <ul>
-<li><span class="math inline">\(\beta_0\)</span> = <code>Intercept</code> is the average expression of the reference group. In this case the reference group is “MUT” genotype in condition “A”.</li>
-<li><span class="math inline">\(\beta_1\)</span> = <code>genotype_MUT_vs_WT</code> is the average difference of “MUT” genotype versus the “WT”, both in condition “A”.</li>
-<li><span class="math inline">\(\beta_2\)</span> = <code>treatment_B_vs_A</code> is the average difference of condition “B” versus “A”, both for “MUT” genotype.</li>
+<li><span class="math inline">\(\beta_0\)</span> = <code>Intercept</code> is the average expression of the reference group. In this case the reference group is “MUT” genotype in treatment “A”.</li>
+<li><span class="math inline">\(\beta_1\)</span> = <code>genotype_MUT_vs_WT</code> is the average difference of “MUT” genotype versus the “WT”, both in treatment “A”.</li>
+<li><span class="math inline">\(\beta_2\)</span> = <code>treatment_B_vs_A</code> is the average difference of treament “B” versus “A”, both for “MUT” genotype.</li>
 <li><span class="math inline">\(\beta_3\)</span> = <code>genotypeMUT.treatmentB</code> is the “difference of differences”, i.e. whether “WT” and “MUT” respond differently to the treatment.</li>
 </ul>
 </details>
@@ -2270,12 +2254,12 @@ dds &lt;- DESeq(dds)</code></pre>
 <tr class="odd">
 <td align="center"><span class="math inline">\(\beta_1 = 0\)</span></td>
 <td align="center"><code>list(&quot;genotype_MUT_vs_WT&quot;)</code></td>
-<td align="center">Are “WT” and “MUT” different in condition “A”?</td>
+<td align="center">Are “WT” and “MUT” different in treatment “A”?</td>
 </tr>
 <tr class="even">
 <td align="center"><span class="math inline">\(\beta_2 = 0\)</span></td>
 <td align="center"><code>list(&quot;treatment_B_vs_A&quot;)</code></td>
-<td align="center">Are conditions “A” and “B” different for “WT”?</td>
+<td align="center">Are treatments “A” and “B” different for “WT”?</td>
 </tr>
 <tr class="odd">
 <td align="center"><span class="math inline">\(\beta_3 = 0\)</span></td>
@@ -2285,12 +2269,12 @@ dds &lt;- DESeq(dds)</code></pre>
 <tr class="even">
 <td align="center"><span class="math inline">\(\beta_1 + \beta_3 = 0\)</span></td>
 <td align="center"><code>list(c(&quot;genotype_MUT_vs_WT&quot;, &quot;genotypeMUT.treatmentB&quot;))</code></td>
-<td align="center">Are “WT” and “MUT” different in condition “B”?</td>
+<td align="center">Are “WT” and “MUT” different in treatment “B”?</td>
 </tr>
 </tbody>
 </table>
 <p>For example to test for the interaction, we would do:</p>
-<pre class="r"><code>results(dds, contrast = list(&quot;genotypeWT.conditionB&quot;))</code></pre>
+<pre class="r"><code>results(dds, contrast = list(&quot;genotypeMUT.treatmentB&quot;))</code></pre>
 </div>
 <div id="extra-numeric-contrasts" class="section level3">
 <h3>Extra: Numeric Contrasts</h3>
@@ -2333,17 +2317,17 @@ wt_b &lt;- c(1, 0, 1, 0)
 mut_b &lt;- c(1, 1, 1, 1)</code></pre>
 <p>Now, to define our contrasts we can express things as differences between the groups we want to compare. Here are all the contrasts we mentioned earlier:</p>
 <pre class="r"><code># difference between mutant and wild-type 
-mut_a - wt_a # under condition A
-mut_b - wt_b # under condition B
+mut_a - wt_a # under treatment A
+mut_b - wt_b # under treatment B
 
-# difference between conditions 
+# difference between treatments 
 wt_b - wt_a   # for wild-type
 mut_b - mut_a # for mutant
 
 # difference of differences (interaction)
 # does the mutant&#39;s response to treatment different from the wild-type&#39;s response?
 (mut_b - mut_a) - (wt_b - wt_a)</code></pre>
-<p>With numeric contrasts you can even define more unusual contrasts. For example, let’s say we were interested in whether the average of the samples in condition “B” was different from the average of the samples in condition “A”. This would be the contrast for that question:</p>
+<p>With numeric contrasts you can even define more unusual contrasts. For example, let’s say we were interested in whether the average of the samples in treatment “B” was different from the average of the samples in treatment “A”. This would be the contrast for that question:</p>
 <pre class="r"><code># average of b_mut and b_wt minus average of a_mut and a_wt
 (mut_b + wt_b)/2 - (mut_a + wt_a)/2</code></pre>
 </div>

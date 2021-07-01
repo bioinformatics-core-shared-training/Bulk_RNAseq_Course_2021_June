@@ -3,9 +3,9 @@ title: "Introduction to Bulk RNAseq data analysis"
 subtitle: Annotation and Visualisation of Differential Expression Results
 date: '`r format(Sys.time(), "Last modified: %d %b %Y")`'
 output:
-  html_document:
-    toc: yes
   pdf_document:
+    toc: yes
+  html_document:
     toc: yes
 bibliography: ref.bib
 ---
@@ -252,7 +252,7 @@ ggplot(volcanoTab.11, aes(x = logFC, y=`-log10(pvalue)`)) +
     geom_text(data=~top_n(.x, 1, wt=-FDR), aes(label=Symbol))
 ```
 
-## Exercise 2 - Volcano plot for 33 days
+## Exercise 1 - Volcano plot for 33 days
 
 Now it's your turn! We just made the volcano plot for the 11 days contrast, you will make the one for the 33 days contrast.
 

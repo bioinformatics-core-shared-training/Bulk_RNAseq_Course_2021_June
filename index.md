@@ -147,8 +147,8 @@ Data Exploration](Markdowns/07_Data_Exploration.html) ([pdf](Markdowns/07_Data_E
 ### Day 3
 
 9:30 - 12:15 - [Differential Expression for RNA-seq](Markdowns/10_DE_analysis_with_DESeq2.html) ([pdf](Markdowns/10_DE_analysis_with_DESeq2.pdf)) - Chandra Chilamakuri   
-    <!-- - [practical solutions](Markdowns/10_DE_analysis_with_DESeq2.Solutions.html) ([pdf](Markdowns/10_DE_analysis_with_DESeq2.Solutions.html))  
-    - [Chandra's Live Script](live_scripts/deseq2_session_v1.0.R) -->
+     - [practical solutions](Markdowns/10_DE_analysis_with_DESeq2.Solutions.html) ([pdf](Markdowns/10_DE_analysis_with_DESeq2.Solutions.html))  
+   <!-- - [Chandra's Live Script](live_scripts/deseq2_session_v1.0.R) -->
  
 12:15 - 13:15 Lunch
 

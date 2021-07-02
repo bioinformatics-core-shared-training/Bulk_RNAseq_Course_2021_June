@@ -60,7 +60,7 @@ As you can see `ah` contains huge amounts of information and it is constantly ch
 
 This object is a vector and you can get information about a single resource by indexing with a single bracket `[` or download a resource with a double bracket `[[`.
 
-```{r, makeOrgDb, message=F}
+```{r, makeOrgDb, message=F, warning=FALSE}
 
 # create an annotationhub instance
 ah <- AnnotationHub()
